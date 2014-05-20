@@ -48,6 +48,12 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 " Theme
 :colorscheme wombat256mod
 
+" gvim
+:set guioptions-=m  "remove menu bar
+:set guioptions-=T  "remove toolbar
+:set guioptions-=r  "remove right-hand scroll bar
+:set guioptions-=L  "remove left-hand scroll bar
+
 " jshint on save
 let jshint2_save = 0
 
