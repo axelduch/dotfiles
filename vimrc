@@ -14,8 +14,14 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle "mozilla/doctorjs"
 
+" SLIMV (lisp)
+Bundle "vim-scripts/slimv.vim"
+
 " file finder
 Bundle "kien/ctrlp.vim" 
+
+" rename a file
+Bundle "danro/rename.vim"
 
 " autocompletion
 Bundle "Valloric/YouCompleteMe"
@@ -25,6 +31,15 @@ Bundle "vim-scripts/yaifa.vim"
 
 " jshint
 Bundle "Shutnik/jshint2.vim"
+
+" syntastic
+Bundle "scrooloose/syntastic"
+
+" tabular alignment of equal signs
+Bundle "godlygeek/tabular"
+
+" Multiple cursors
+Bundle "terryma/vim-multiple-cursors"
 
 " zoom in and out fonts
 Bundle "vim-scripts/fontzoom.vim"
@@ -41,7 +56,7 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 
 filetype plugin indent on     " required!
 
-" JS, PHP autocomplete
+" JS, PHP, JSP autocomplete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
@@ -70,6 +85,6 @@ set list
 set noswapfile " No swap file
 set autoread " reload file when changed outside of vim
 
-" Syntax highlight for at2
+" Syntax highlight
+au BufNewFile,BufRead *.jspf,*.vm set syntax=html
 au BufNewFile,BufRead *.at2 setlocal ft=asm
-
