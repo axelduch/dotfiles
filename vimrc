@@ -41,6 +41,9 @@ Bundle "godlygeek/tabular"
 " Multiple cursors
 Bundle "terryma/vim-multiple-cursors"
 
+" emmet
+Plugin 'mattn/emmet-vim'
+
 " zoom in and out fonts
 Bundle "vim-scripts/fontzoom.vim"
 set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
