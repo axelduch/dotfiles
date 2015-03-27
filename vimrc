@@ -93,3 +93,18 @@ set autoread " reload file when changed outside of vim
 " Syntax highlight
 au BufNewFile,BufRead *.jspf,*.vm set syntax=html
 au BufNewFile,BufRead *.at2 setlocal ft=asm
+
+" ctrl+s to save
+noremap <C-S> :update<CR>
+vnoremap <C-S> <C-C>:update<CR>
+inoremap <C-S> <C-O>:update<CR>
+
+" ctrl+c during normal and insert mode to copy entire line to system clipboard
+nnoremap <c-c> "+yy
+inoremap <c-c> "+yy
+
+" ctrl+c to copy selection in visual mode to system clipboard
+vnoremap <c-c> "+y
+
+" ctrl+v during insert mode to paste system clipboard
+inoremap <c-v> <c-r>*<CR>
