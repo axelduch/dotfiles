@@ -1,56 +1,52 @@
-" Pathogen
-" call pathogen#infect()
-" call pathogen#helptags()
-
 " Vundle
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
-Bundle "mozilla/doctorjs"
+Plugin 'gmarik/Vundle.vim'
+Plugin 'mozilla/doctorjs'
 
 " SLIMV (lisp)
-Bundle "vim-scripts/slimv.vim"
+Plugin 'vim-scripts/slimv.vim'
 
 " file finder
-Bundle "kien/ctrlp.vim" 
+Plugin 'kien/ctrlp.vim'
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
 " rename a file
-Bundle "danro/rename.vim"
+Plugin 'danro/rename.vim'
 
 " autocompletion
-Bundle "Valloric/YouCompleteMe"
+Plugin 'Valloric/YouCompleteMe'
 
 " smart detection of space or tabs mode
-Bundle "vim-scripts/yaifa.vim"
+Plugin 'vim-scripts/yaifa.vim'
 
 " jshint
-Bundle "Shutnik/jshint2.vim"
+Plugin 'Shutnik/jshint2.vim'
 
 " syntastic
-Bundle "scrooloose/syntastic"
+Plugin 'scrooloose/syntastic'
 
 " tabular alignment of equal signs
-Bundle "godlygeek/tabular"
+Plugin 'godlygeek/tabular'
 
 " Multiple cursors
-Bundle "terryma/vim-multiple-cursors"
+Plugin 'terryma/vim-multiple-cursors'
 
 " emmet
 Plugin 'mattn/emmet-vim'
 
 " zoom in and out fonts
-Bundle "vim-scripts/fontzoom.vim"
+Plugin 'vim-scripts/fontzoom.vim'
 set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
 
 " powerline
-Bundle "Lokaltog/powerline", {'rtp': 'powerline/bindings/vim/'}
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 set laststatus=2
 set encoding=utf-8
 set t_Co=256
@@ -58,6 +54,9 @@ let g:Powerline_symbols = 'fancy'
 set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
+Plugin 'wombat256.vim'
+
+call vundle#end()
 filetype plugin indent on     " required!
 
 " JS, PHP, JSP autocomplete
