@@ -1,12 +1,13 @@
 " Vundle
 set nocompatible              " be iMproved
+set mouse=r
 filetype off                  " required!
 
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Plugin 'gmarik/Vundle.vim'
 Plugin 'mozilla/doctorjs'
 
@@ -85,7 +86,8 @@ set number
 " Display invisible characters
 set list
 " Edition
-set noswapfile " No swap file
+set swapfile
+set dir=~/tmp
 set autoread " reload file when changed outside of vim
 
 " Syntax highlight
