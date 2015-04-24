@@ -57,6 +57,8 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 
 Plugin 'wombat256.vim'
 
+Plugin 'mileszs/ack.vim'
+
 call vundle#end()
 filetype plugin indent on     " required!
 
